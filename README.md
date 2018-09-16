@@ -1,7 +1,7 @@
-Este repositório contém as soluções para o problema abaixo descrito. (2018/2)
+Este repositório contém as soluções para os problemas descritos abaixo. (2018/2)
 
 # Sistemas Embarcados - Trabalho - Aula 13
-## 1 - Portas duplas de bancos
+## 1 - Portas duplas de bancos (veja o arquivo `[double_door.c](double_door.c)`)
 Com o uso de um subconjunto da linguagem, modele com uma FSM uma solução para o controle de uma porta de banco (porta dupla).
 
 ## 2 - Travas automáticas de carros
