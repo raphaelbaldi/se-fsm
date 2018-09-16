@@ -1,6 +1,16 @@
 Este repositório contém as soluções para os problemas descritos abaixo. (2018/2)
 
 # Sistemas Embarcados - Trabalho - Aula 13
+O objetivo do trabalho é modelar os problemas utilizando um subconjunto de linguagem.
+
+Em duplas ou trios, entregar o código comentado dos 3 problemas propostos em um arquivo compactado.
+
+Você poderá implementar um problema diferente se assim desejar (escolha um dos casos para ser substituído) bastando fornecer juntamente com o seu código uma descrição do problema.
+
+O trabalho deverá ser entregue pelo Moodle. Apenas um integrante deve submeter o trabalho.
+
+Além do enunciado está sendo disponibilizado um exemplo em C (controle de elevador simplificado - [fsm.c](sample/fsm.c)). Você pode utilizar qualquer linguagem de programação para esse trabalho.
+
 ## 1 - Portas duplas de bancos ([`double_door.c`](double_door.c))
 Com o uso de um subconjunto da linguagem, modele com uma FSM uma solução para o controle de uma porta de banco (porta dupla).
 
