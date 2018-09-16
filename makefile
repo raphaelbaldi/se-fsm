@@ -16,4 +16,4 @@ ejection-seat:
 	$(CC) $(CFLAGS) kbhit.c ejection_seat.c -o ejection
 
 clean:
-	-rm -f *.o *~ doors
+	-rm -f *.o *~ doors car ejection
