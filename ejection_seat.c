@@ -18,8 +18,8 @@ typedef void *(*state_func)();
 #define MAX_EJECT_SPEED 1225
 
 
-int req = 0, current_angle = 0, current_speed = 0, ejection_req = 0, ejecting = 0;
-int c;
+int current_angle = 0, current_speed = 0, ejection_req = 0, ejecting = 0;
+int req = 0, c;
 
 int kbhit(void);
 void *ejection_mode(); // Ejection mode - emergency
