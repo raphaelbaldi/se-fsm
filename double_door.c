@@ -145,7 +145,7 @@ void *exiting_bank() {
 int main() {
 	state_func curr_state = idle;
 
-	while(1){
+	while(1) {
 		curr_state = (state_func)(*curr_state)();
 		fprintf(stderr, "(external door: %d | client between doors: %d | internal door: %d)\n", external_door, client_between_doors, internal_door);
 		sleep(1);
