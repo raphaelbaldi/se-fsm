@@ -19,6 +19,7 @@ void *speed_down();
 void *auto_door_lock();
 void *idle();
 
+// Controls the car's slow down state.
 void *speed_down() {
   fprintf(stderr, "SPEED DOWN ");
   speed -= 0;
@@ -28,6 +29,7 @@ void *speed_down() {
   return idle;
 }
 
+// Controls the car's speeding up state.
 void *speed_up() {
   fprintf(stderr, "SPEED UP ");
   speed += 5;
@@ -37,15 +39,17 @@ void *speed_up() {
   return idle;
 }
 
+// Controls the automatic locking mechanism of the doors.
 void *auto_door_lock() {
+  fprintf(stderr, "CHECK AUTO LOCK DOORS ");
   if (door_lock || speed < LOCK_DOORS_SPEED) {
     return idle;
   }
-  fprintf(stderr, "AUTO LOCK DOORS ");
   door_lock = 1;
   return idle;
 }
 
+// Car is idling.
 void *idle() {
   fprintf(stderr, "IDLE ");
     switch (car_action) {
@@ -59,7 +63,6 @@ void *idle() {
 
     return idle;
 }
-
 
 int main() {
 	state_func curr_state = idle;
